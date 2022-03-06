@@ -81,8 +81,75 @@ header .icons i:hover {
 #menu-bars {
   display: none;
 }
-.show {
-  display: block;
+
+/* search bar */
+#search-form {
+  background-color: rgb(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: -110%;
+  left: 0;
+  z-index: 1004;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
+#search-form #search-box {
+  background: none;
+  font-size: 2rem;
+  width: 35rem;
+  height: 5rem;
+  padding: 0 1rem;
+  text-transform: none;
+  color: var(--green);
+  border-radius: 3rem;
+  transition: transform 0.1s ease-in-out;
+  background-color: rgb(243, 242, 242);
+}
+
+#search-form #search-box::placeholder {
+  color: var(--light-color);
+}
+/* hide the placeholder text on focus */
+:focus::placeholder {
+  text-indent: -999px;
+}
+#search-form #search-box:focus {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+#search-form #search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+#search-form div {
+  position: relative;
+}
+#search-form .fa-search {
+  position: absolute;
+  right: 1rem;
+  top: -1rem;
+  font-size: 2rem;
+  color: var(--orange);
+  transition: all 0.2s ease-in-out;
+}
+#search-form .fa-search:hover {
+  color: var(--green);
+  cursor: pointer;
+}
+#search-form #close {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  cursor: pointer;
+}
+
+#search-form #close:hover {
+  color: var(--orange);
 }
 /* media queries */
 @media screen and (max-width: 991px) {
@@ -108,6 +175,9 @@ header .icons i:hover {
     padding: 1rem;
     background: #fff;
     display: none;
+  }
+  .show {
+    display: block !important;
   }
 
   header .navbar a {
