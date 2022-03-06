@@ -1,0 +1,124 @@
+/* Nunito font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+:root {
+  --light-color: #666;
+  --green: #00af91;
+  --orange: #fb743e;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  padding: 1rem 7%;
+}
+header .logo {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: var(--orange);
+}
+header .logo i {
+  color: var(--green);
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  padding: 1.6rem 1.5rem;
+  color: var(--light-color);
+}
+.navbar a.active,
+.navbar a:hover {
+  background-color: var(--green);
+  color: #fff;
+}
+
+header .icons a,
+header .icons i {
+  cursor: pointer;
+  font-size: 1.9rem;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--orange);
+  background-color: rgba(238, 238, 238, 0.609);
+  transition: all 0.3s ease-in-out;
+}
+header .icons a:hover,
+header .icons i:hover {
+  background-color: #fff;
+  transform: translateY(-1rem);
+}
+
+#menu-bars {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* media queries */
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  #menu-bars {
+    display: inline-block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background: #fff;
+    display: none;
+  }
+
+  header .navbar a {
+    display: block;
+    background: #eee;
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+}
