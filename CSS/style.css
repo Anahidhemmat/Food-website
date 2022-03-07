@@ -161,6 +161,9 @@ header .icons i:hover {
   header {
     padding: 1rem 2rem;
   }
+  .home {
+    padding: 2rem;
+  }
 }
 
 @media screen and (max-width: 765px) {
@@ -187,6 +190,10 @@ header .icons i:hover {
     background: #eee;
     padding: 1.5rem;
     margin: 1rem;
+  }
+
+  .home .home-slider .slide .content h3 {
+    font-size: 4rem;
   }
 }
 @media screen and (max-width: 350px) {
@@ -253,6 +260,9 @@ header .icons i:hover {
 .order-btn:hover {
   background: var(--orange);
   letter-spacing: 0.2rem;
+}
+.swiper-pagination-bullet-active {
+  background: var(--orange);
 }
 /* .order-btn::before {
   content: "";
