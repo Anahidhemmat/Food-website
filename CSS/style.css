@@ -249,20 +249,30 @@ header .icons i:hover {
   padding: 1rem 3rem;
   margin-top: 1rem;
   cursor: pointer;
-}
-
-.order-btn {
-  position: relative;
-  z-index: 1 !important;
   transition: all 0.2s ease-in;
 }
 
-.order-btn:hover {
+.btn:hover {
   background: var(--orange);
   letter-spacing: 0.2rem;
 }
 .swiper-pagination-bullet-active {
   background: var(--orange);
+}
+
+/* dishes section */
+.sub-heading {
+  color: var(--green);
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.heading {
+  color: var(--orange);
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
 }
 /* .order-btn::before {
   content: "";
