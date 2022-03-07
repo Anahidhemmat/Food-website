@@ -13,6 +13,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- CSS animation library cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- costum css file link -->
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
@@ -55,9 +65,9 @@
 
     <!-- home section starts -->
     <section class="home" id="home">
-      <div class="home-slider">
-        <div class="wrapper">
-          <div class="slide">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
             <div class="content">
               <span>our special dishes</span>
               <h3>spicy noodels</h3>
@@ -73,7 +83,7 @@
               <img src="images/home-img-1.png" alt="noodels" />
             </div>
           </div>
-          <div class="slide">
+          <div class="slide swiper-slide">
             <div class="content">
               <span>our special dishes</span>
               <h3>fried chiken</h3>
@@ -89,7 +99,7 @@
               <img src="images/home-img-2.png" alt="chiken" />
             </div>
           </div>
-          <div class="slide">
+          <div class="slide swiper-slide">
             <div class="content">
               <span>our special dishes</span>
               <h3>pizza</h3>
@@ -106,10 +116,13 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- home section ends -->
 
+    <!-- Swiper cdn -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- costum js file link -->
     <script src="Script/app.js"></script>
   </body>
