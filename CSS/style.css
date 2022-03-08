@@ -279,7 +279,7 @@ header .icons i:hover {
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 2rem;
   justify-items: center;
-  background: #eee;
+  background: rgb(255, 226, 210);
   padding: 3rem;
 }
 
@@ -363,6 +363,67 @@ header .icons i:hover {
 }
 .add-btn i {
   font-size: 1.7rem;
+}
+
+/* media queries */
+@media screen and (max-width: 991px) {
+  .dishes .box-container .box img {
+    height: auto;
+    width: 100%;
+  }
+}
+/* about section */
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row .image img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  margin: 1rem;
+}
+.about .row .content h3 {
+  font-size: 3rem;
+  color: var(--orange);
+}
+.about .row .content p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 4rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+.about .row .content .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  margin: 3rem 0;
+}
+.about .row .content .icons-container .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 17rem;
+  background: #eee;
+  padding: 2rem;
+}
+
+.about .row .content .icons-container .icons i {
+  font-size: 2.5rem;
+  color: var(--green);
+}
+.about .row .content .icons-container .icons span {
+  font-size: 1.5rem;
+  color: var(--orange);
 }
 /* .order-btn::before {
   content: "";
