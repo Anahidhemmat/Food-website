@@ -274,6 +274,96 @@ header .icons i:hover {
   padding-bottom: 3rem;
   text-transform: uppercase;
 }
+.dishes .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  background: #eee;
+  padding: 3rem;
+}
+
+.dishes .box-container .box {
+  background: #fff;
+  padding: 3rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 30rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye {
+  font-size: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  color: var(--orange);
+  line-height: 5rem;
+  width: 5rem;
+  height: 5rem;
+  background: #eee;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+.dishes .box-container .box .fa-heart {
+  right: -15rem;
+}
+.dishes .box-container .box .fa-eye {
+  left: -15rem;
+}
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover {
+  background: var(--green);
+  color: #fff;
+}
+.dishes .box-container .box:hover .fa-heart {
+  right: 1.5rem;
+}
+.dishes .box-container .box:hover .fa-eye {
+  left: 1.5rem;
+}
+.dishes .box-container .box img {
+  height: 13rem;
+  margin: 1.7rem 0;
+}
+.dishes .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
+.dishes .box-container .box .stars {
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  color: var(--green);
+}
+.dishes .box-container .box span {
+  font-size: 1.7rem;
+  color: var(--light-color);
+}
+.add-btn {
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin: 0 1rem;
+  transition: all 0.3s linear;
+}
+.add-btn:hover {
+  letter-spacing: 0;
+}
+
+.add-btn::after {
+  content: "add to cart";
+  display: none;
+  padding: 5px 0 0 17px;
+  font-size: 0.5rem;
+  transition: all 0.3s linear;
+}
+.add-btn:hover::after {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.add-btn i {
+  font-size: 1.7rem;
+}
 /* .order-btn::before {
   content: "";
   position: absolute;
