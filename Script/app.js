@@ -4,16 +4,16 @@ const navbar = document.querySelector(".navbar");
 const searchIcon = document.querySelector("#search-icon");
 const searchForm = document.querySelector("#search-form");
 const searchCloseIcon = document.querySelector("#close");
+const addToCartBtn = document.querySelector(".add-btn");
 
 // navbar
 menuBar.addEventListener("click", () => {
-  menuBar.classList.toggle("fa-times");
-  navbar.classList.toggle("show");
   navbar.classList.add(
     "animate__animated",
-    "animate__slideInDown",
+    "animate__slideInUp",
     "animate__delay-3"
   );
+  navbar.classList.toggle("show");
 });
 
 window.addEventListener("scroll", () => {
@@ -43,3 +43,9 @@ const swiper = new Swiper(".home-slider", {
   },
   loop: true,
 });
+
+// for (let btn in addToCartBtn) {
+//   btn.addEventListener("mouseover", () => {
+//     btn.classList.add("animate__animated", "animate__slideOutRight");
+//   });
+// }
